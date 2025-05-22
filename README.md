@@ -1,66 +1,14 @@
-## Foundry
+1. 相对稳定性   锚定1美元   确保我们的稳定币始终价值1美元
+    使用chainklink价格源 来获取价格
+    并设置一个函数用来交换ETH BTC 或者等值的物品
+2. 机制：算法稳定币     不会有任何中心化机构来铸币，销毁和维护价格。
+    规定人们只能使用足够的抵押品进行铸币 这将直接内置到我们的协议中
+3. 抵押品类型 ： 外部抵押  加密货币为抵押品 ETH BTC 具体使用的是wETH , wBTC 即以太坊和比特币的ERC20版本 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+-计算健康因子函数
+-如果债务为 0，则设置健康因子
+-添加了一堆视图函数
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+1.我们的不变量/属性是什么?
+2.
